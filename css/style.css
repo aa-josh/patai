@@ -1,0 +1,155 @@
+:root {
+  --prymary: red;
+  --bg: white;
+  --shadow: 2px 2px 2px rgba(0, 0, 0, 0.8);
+}
+
+body {
+  animation: 2s ease-out 0.2s 1 slideInFromLeft;
+  font-family: "Kanit", sans-serif;
+  min-height: 2000px;
+}
+
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.banner {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.banner video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.banner .content {
+  position: relative;
+  z-index: 1;
+  margin: 0 auto;
+  text-align: center;
+  animation: 3s ease-out 0s 1 slideInFromLeft;
+}
+
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.banner .content h1 {
+  font-family: "Edu TAS Beginner", cursive;
+  margin-top: -2rem;
+  padding: 0;
+  font-size: 4.5rem;
+  text-transform: uppercase;
+  color: #fff;
+  text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.8);
+}
+
+.banner .content h2 {
+  font-size: 4rem;
+  text-shadow: 3px 3px 3px rgba(255, 255, 255, 0.8);
+}
+
+.banner .content p {
+  font-size: 2rem;
+  text-shadow: 3px 3px 3px rgba(255, 255, 255, 1);
+  font-weight: 600;
+}
+
+.banner .content p span {
+  font-size: 2.5rem;
+  color: var(--bg);
+  text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.8);
+}
+
+.banner .content h4 {
+  font-family: "Edu TAS Beginner";
+  font-size: 3rem;
+  font-weight: 600;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.banner .content a {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: white;
+  text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.8);
+  text-decoration: none;
+  background: linear-gradient(red, white);
+  padding: 0.2rem 1rem;
+  border-radius: 10px;
+  margin: 2rem;
+}
+
+.banner .content a:hover {
+  color: black;
+}
+
+/* media */
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  html {
+    font-size: 65%;
+  }
+  .simply-countdown > .simply-section {
+    color: white;
+    width: 28px;
+    height: 28px;
+    padding: 20px;
+    float: left;
+    margin: 8px;
+    border-radius: 50%;
+    font-size: 1.3rem;
+    font-weight: bold;
+  }
+
+  .simply-countdown > .simply-section .simply-amount {
+    font-size: 1.6rem;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  html {
+    font-size: 65%;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  html {
+    font-size: 80%;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  html {
+    font-size: 90%;
+  }
+}

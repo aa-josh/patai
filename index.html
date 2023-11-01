@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Edu+TAS+Beginner:wght@400;600&family=Kanit:ital,wght@0,100;0,200;0,300;0,700;0,900;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- simply countdown -->
+    <link
+      rel="stylesheet"
+      href="simplyCountdown.js-master/simplyCountdown.theme.default.css"
+    />
+    <script src="simplyCountdown.js-master/simplyCountdown.min.js"></script>
+
+    <!-- ctyle css -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="banner">
+      <video autoplay muted loop>
+        <source src="mp4/bendera2.mp4" type="video/mp4" />
+      </video>
+      <div class="content">
+        <h1>Bewara !!!</h1>
+        <h2>Ayo Datang Ke TPS</h2>
+        <p>
+          <span>Partai Liwet Nasional</span> berjuang bersama rakyat menuju
+          kemakmuran
+        </p>
+        <h4>Ingat Tanggalnya, Ingat Partainya</h4>
+        <div class="simply-countdown"></div>
+        <a href="index2.html/#hallo" class="btn">Lihat Profil Partai</a>
+      </div>
+    </div>
+
+    <script>
+      simplyCountdown(".simply-countdown", {
+        year: 2023, // required
+        month: 12, // required
+        day: 27, // required
+        hours: 8, // Default is 0 [0-23] integer
+        words: {
+          //words displayed into the countdown
+          days: { singular: "hari", plural: "hari" },
+          hours: { singular: "jam", plural: "jam" },
+          minutes: { singular: "menit", plural: "menit" },
+          seconds: { singular: "detik", plural: "detik" },
+        },
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,67 @@
+body {
+  padding: 2rem 5% 2rem;
+  box-sizing: border-box;
+  background-color: antiquewhite;
+  height: 100vh;
+  text-align: center;
+  animation: 3s ease-out 0s 1 slideInFromLeft;
+}
+
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.container span {
+  font-size: 4rem;
+  font-family: "Times New Roman";
+  font-weight: bold;
+  color: rgb(47, 2, 88);
+}
+
+.container h2 {
+  font-family: "Tangerine";
+  font-size: 6rem;
+  font-weight: 700;
+  color: rgb(1, 1, 31);
+}
+
+.container p {
+  font-family: "Edu TAS Beginner";
+  font-size: 1.6rem;
+  color: rgb(51, 1, 58);
+  margin-top: -1rem;
+}
+
+.calon .btn {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  background-color: red;
+  color: white;
+  font-size: 1rem;
+  padding: 0.1rem 1rem;
+  border-radius: 10px;
+}
+
+.calon .btn:hover {
+  color: red;
+  background-color: black;
+}
+
+@media (max-width: 576px) {
+  html {
+    font-size: 90%;
+  }
+
+  .container {
+    padding: 0.6rem 13%;
+  }
+}
